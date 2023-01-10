@@ -21,7 +21,7 @@
 			<div class="main">
 				<div class="unknown">We're having trouble with Linux. <a href="http://www.linuxforums.org/forum/newbie/104386-what-version-32-64bit-linux-installed-my-machine.html">Try here for advice.</a></div>
 				<div class="mobile">You're on a phone or a tablet.</div>
-				<h1 id="OS"></h1> 
+				<h3 id="OS"></h3> 
 				<div class="arch64">Your processor is <div id="bit">64</div> bit.</div>
 				<div class="arch32">Your processor is <div id="bit">32</div> bit.<br />...Probably.  It can be hard to tell.</div>
 				<noscript>To detect your if your processor 32 or 64 bit, <strong>enable JavaScript</strong>.</noscript>
@@ -46,10 +46,9 @@
             if (navigator.appVersion.indexOf("Linux")!=-1) OSName="Linux";
               
             // Display the OS name
-            document.getElementById("OS").innerHTML = OSName;
+            document.getElementById("OS").textcontent = OSName;
         } 
 	    operatingSytem();
     </script>
 	<script src="64or32-jquery.min.js"></script>
-<!-- 	<script src="64or32-no-jquery.min.js"></script> -->
 </html>
